@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İlgi Alanlarım</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Stil eklemek için */
+    .interest {
+      margin-top: 20px;
+    }
+    .tmdb-data {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="anasayfa.html">Ana Sayfa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hakkimda.html">Hakkımda</a> <!-- Bu bağlantı Hakkımda sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a> <!-- Bu bağlantı CV sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sehrim.html">Şehrim</a> <!-- Bu bağlantı yeni oluşturulan Şehrim sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takim.html">Takımımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim.html#contact">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- İlgi Alanları -->
+  <div class="container">
+    <h2 class="mt-5">İlgi Alanlarım</h2>
+    <div class="row">
+      <div class="col-md-3 interest">
+        <h4>Yemek Yapmak</h4>
+        <img src="images/yemek.jpg" alt="Yemek Yapmak" class="img-fluid">
+      </div>
+      <div class="col-md-3 interest">
+        <h4>Kitap Okumak</h4>
+        <img src="images/kitap.jpg" alt="Kitap Okumak" class="img-fluid">
+      </div>
+      <div class="col-md-3 interest">
+        <h4>Seyahat Etmek</h4>
+        <img src="images/seyehat.jpg" alt="Seyahat Etmek" class="img-fluid">
+      </div>
+      <div class="col-md-3 interest">
+        <h4>Futbol</h4>
+        <img src="images/futbol.jpg" alt="Futbol" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- TMDB API Verileri -->
+    <div class="row tmdb-data">
+      <div class="col-12">
+        <h2>Popüler Filmler</h2>
+        <div id="tmdb-movies" class="mt-3">
+          <!-- TMDB film verileri burada görünecek -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery ve Bootstrap CDN'leri -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- TMDB API Verilerini Çekme -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('https://api.themoviedb.org/3/movie/popular?api_key=bdcd663de47aac52255afda7513b0007')
+      .then(response => response.json())
+      .then(data => {
+        const movies = data.results;
+        const moviesContainer = document.getElementById('tmdb-movies');
+        movies.forEach(movie => {
+          const movieElement = document.createElement('div');
+          movieElement.classList.add('movie', 'col-md-3', 'mb-4');
+          movieElement.innerHTML = `
+            <div class="card">
+              <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="card-img-top" alt="${movie.title}">
+              <div class="card-body">
+                <h5 class="card-title">${movie.title}</h5>
+                <p class="card-text">${movie.overview}</p>
+              </div>
+            </div>
+          `;
+          moviesContainer.appendChild(movieElement);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>

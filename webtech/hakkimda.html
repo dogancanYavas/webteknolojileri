@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişisel Web Sitesi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="anasayfa.html">Ana Sayfa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sehrim.html">Şehrim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takim.html">Takımımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim.html">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <style>
+    body {
+      background-image: url('images/assos.jpg');
+      background-size: cover; /* Resmi ekran boyutuna göre otomatik boyutlandır */
+      background-position: center; /* Resmi ekranın ortasına konumla */
+    }
+    
+    .about-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .about-section img {
+      max-width: 200px;
+      border-radius: 5%;
+      margin-bottom: 20px;
+    }
+    #canakkaleResim img {
+      max-width: 200px;
+    }
+    #sakaryaResim img {
+      max-width: 200px;
+    }
+    #futbolResim img {
+      max-width: 200px;
+    }
+    #tenisResim img {
+      max-width: 200px;
+    }
+    .content {
+      color: rgb(237, 157, 58); /* Renk değiştirilebilir */
+      font-weight: bold;
+      font-style: italic;
+    }
+  </style>
+
+  <!-- Hakkımda -->
+  <section class="about-section">
+    <div class="container">
+      <img src="images/dogancan.jpg" alt="Doğancan Yavaş" class="small-image">
+      <h3>Doğancan Yavaş</h3>
+      <div class="row">
+        <div class="col-sm" id="canakkaleResim">
+          <div class="content">
+          <h2>Çanakkaleliyim</h2>
+        </div>
+          <img src="images/canakkale.jpg" alt="Çanakkale">
+        </div>
+        <div class="col-sm" id="sakaryaResim">
+          <div class="content">
+          <h2>Sakarya Üniversitesinde Okuyorum </h2>
+          </div>
+          <img src="images/sakarya.jpg" alt="Sakarya Üniversitesi">
+        </div>
+      </div>
+      <div class="content">
+      <h2>Hobilerim</h2>
+      <div class="row">
+        <div class="col-sm" id="futbolResim">
+          <img src="images/futbol.jpg" alt="Futbol">
+          <h2>Futbol</h2>
+        </div>
+        <div class="col-sm" id="tenisResim">
+          <img src="images/tenis.jpg" alt="Tenis">
+          <h2>Tenis</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- İletişim Bilgileri -->
+  <section class="contact-section">
+    <div class="container">
+      <p>İletişim için: <a href="mailto:dgncnyvs@gmail.com">dgncnyvs@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Bootstrap ve jQuery CDN'leri -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

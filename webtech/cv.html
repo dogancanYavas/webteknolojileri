@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="anasayfa.html">Ana Sayfa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="hakkimda.html">Hakkımda</a> <!-- Bu bağlantı Hakkımda sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a> <!-- Bu bağlantı CV sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sehrim.html">Şehrim</a> <!-- Bu bağlantı yeni oluşturulan Şehrim sayfasına yönlendirir -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="takim.html">Takımımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim.html">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        padding: 2rem;
+        max-width: 1200px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .details {
+        flex: 2;
+        padding: 1rem;
+    }
+    
+    h1, h2, h3 {
+        color: #333;
+    }
+    
+    p, ul {
+        line-height: 1.6;
+        margin: 0.5rem 0;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .contact-info p {
+        margin: 0.5rem 0;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+        .profile, .details {
+            padding: 1rem;
+        }
+    }
+    
+</style>
+    <section id="cv">
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpg" alt="Doğancan Yavaş" class="profile-pic">
+                <h1>Doğancan Yavaş</h1>
+                <p>Bilgisayar Mühendisliği Öğrencisi</p>
+                <div class="contact-info">
+                    <p><strong>Telefon:</strong> +90 555 555 5555</p>
+                    <p><strong>E-posta:</strong> dyavas@example.com</p>
+                    <p><strong>Adres:</strong> Sakarya Üniversitesi Kampüsü, Esentepe Mahallesi, Serdivan, Sakarya, Türkiye</p>
+                </div>
+            </div>
+            <div class="details">
+                <h2>Eğitim</h2>
+                <p><strong>Sakarya Üniversitesi, Bilgisayar ve Bilişim Bilimleri Fakültesi</strong></p>
+                <p>Bilgisayar Mühendisliği, 2020 - Devam ediyor</p>
+
+                <h2>Yetkinlikler</h2>
+                <ul>
+                    <li>Programlama Dilleri: Python, Java, C++, JavaScript, HTML & CSS</li>
+                    <li>Yazılım ve Araçlar: Microsoft Office (Word, Excel, PowerPoint), Visual Studio Code, Git & GitHub, MATLAB, AutoCAD</li>
+                    <li>Veritabanı Yönetimi: MySQL, PostgreSQL, MongoDB</li>
+                    <li>Web Geliştirme: React.js, Node.js, Django</li>
+                    <li>Sistem ve Ağ Yönetimi: Linux (Ubuntu, CentOS), Windows Server, Cisco Packet Tracer</li>
+                </ul>
+
+                <h2>Projeler</h2>
+                <p><strong>Kişisel Blog Sitesi Geliştirme</strong></p>
+                <p>Teknolojiler: HTML, CSS, JavaScript, Django</p>
+                <p>Açıklama: Kişisel yazılar ve teknik makaleler paylaşmak için tasarlanmış bir blog sitesi.</p>
+
+                <p><strong>Yüz Tanıma Uygulaması</strong></p>
+                <p>Teknolojiler: Python, OpenCV</p>
+                <p>Açıklama: Görüntü işleme tekniklerini kullanarak yüz tanıma ve kimlik doğrulama sistemi geliştirme.</p>
+
+                <p><strong>Online Alışveriş Platformu</strong></p>
+                <p>Teknolojiler: React.js, Node.js, MongoDB</p>
+                <p>Açıklama: Kullanıcıların ürün alıp satabileceği, ödeme ve yorum yapabileceği bir e-ticaret platformu.</p>
+
+                <h2>Çalışma Deneyimi</h2>
+                <p><strong>XYZ Yazılım Şirketi, Stajyer Yazılım Geliştirici</strong></p>
+                <p>Haziran 2023 - Ağustos 2023</p>
+                <p>Yazılım geliştirme süreçlerine destek sağlamak, kodlama ve hata ayıklama işlemleri, takım içinde proje yönetimi ve iş birliği.</p>
+
+                <p><strong>ABCD Teknoloji, Sistem Destek Stajyeri</strong></p>
+                <p>Haziran 2022 - Ağustos 2022</p>
+                <p>Bilgisayar donanım ve yazılım sorunlarına çözüm üretmek, ağ yönetimi ve kullanıcı desteği sağlamak.</p>
+
+                <h2>Gönüllü Çalışmalar</h2>
+                <p><strong>Sakarya Üniversitesi Bilişim Topluluğu</strong></p>
+                <p>2021 - Devam ediyor</p>
+                <p>Çeşitli seminer ve etkinliklerin düzenlenmesinde aktif rol almak.</p>
+
+                <p><strong>Kodlama Eğitimi Gönüllüsü</strong></p>
+                <p>2022</p>
+                <p>Ortaokul ve lise öğrencilerine temel kodlama dersleri vermek.</p>
+
+                <h2>Sertifikalar</h2>
+                <ul>
+                    <li>Microsoft Office Specialist (MOS)</li>
+                    <li>Cisco Certified Network Associate (CCNA)</li>
+                    <li>Python for Data Science - Coursera</li>
+                </ul>
+
+                <h2>Hobiler ve İlgi Alanları</h2>
+                <ul>
+                    <li>Müzik: Gitar ve piyano çalmak</li>
+                    <li>Spor: Basketbol ve yüzme</li>
+                    <li>Seyahat: Yeni yerler keşfetmek ve kültürleri öğrenmek</li>
+                    <li>Fotoğrafçılık: Doğa ve portre fotoğrafları çekmek</li>
+                </ul>
+
+                <h2>Dil Bilgisi</h2>
+                <p><strong>Türkçe:</strong> Anadil</p>
+                <p><strong>İngilizce:</strong> İleri düzey (IELTS: 7.5)</p>
+
+                <h2>Referanslar</h2>
+                <p>Talep üzerine sunulacaktır.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+ <!-- Bootstrap ve jQuery CDN'leri -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
