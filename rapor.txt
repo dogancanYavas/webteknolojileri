@@ -1,0 +1,45 @@
+Proje Raporu
+
+Doğancan Yavaş g201210371 
+ 
+WEB TEKNOLOJİLERİ Dersi
+
+Dersi Veren Öğretim Elemanı Dr.Öğr.Üyesi HÜSEYİN ESKİ
+
+Bireysel olarak kendimi ve memleketimi tanıtan kişisel web sitesi.
+
+
+
+Proje Tanımı:
+Bu proje, kişisel bir web sitesinin geliştirilmesini kapsamaktadır. 
+
+ Kullanılan Teknolojiler:
+
+Frontend: HTML, CSS, JavaScript (Bootstrap kullanılarak)
+Backend: Node.js
+Veritabanı: MongoDB
+Diğer Araçlar: 000webhost (hosting)
+ Sayfaların İçeriği:
+
+Anasayfa (anasayfa.html): Bu sayfa, web sitesinin ana giriş noktasıdır. [Ana sayfa içeriği hakkında kısa açıklama]
+Hakkımda (hakkimda.html): Bu sayfa, [sizin hakkınızda bilgileri] içerir.
+Şehrim (sehrim.html): Bu sayfa, [şehriniz hakkında bilgiler] içerir.
+Mirasımız (mirasimiz.html): Bu sayfa, [mirasımız hakkında bilgiler] içerir.
+Login (login.html): Bu sayfa, kullanıcıların giriş yapmalarını sağlar. Kullanıcı adı ve şifre ile giriş yapabilirler.
+Kayıt Ol (kayitol.html): Bu sayfa, yeni kullanıcıların kayıt olmalarını sağlar.
+ Backend Fonksiyonları:
+
+Kullanıcı Girişi ve Kaydı: Kullanıcıların web sitesine giriş yapmalarını ve yeni hesaplar oluşturmalarını sağlayan backend fonksiyonlar.
+Veritabanı Bağlantısı: MongoDB veritabanına bağlanma ve kullanıcı bilgilerini depolama.
+ İleri Geliştirmeler:
+
+Güvenlik Geliştirmeleri: Kullanıcı girişi için daha güvenli yöntemlerin uygulanması.
+Daha Fazla Sayfa İçeriği: Anasayfaya ek içeriklerin eklenmesi (örneğin, fotoğraf galerisi, haberler).
+Mobil Dostu Tasarım: Web sitesinin mobil cihazlarda daha iyi görüntülenmesini sağlayacak tasarım iyileştirmeleri.
+ Sonuçlar ve İnceleme:
+Bu proje, [proje hedefleri] doğrultusunda başarıyla tamamlanmıştır. Kullanıcılar, web sitesi aracılığıyla [hedeflenen faydaları] elde edebileceklerdir.
+
+
+
+Sonuç:
+Bu proje, web geliştirme konusunda becerilerimi geliştirmeme ve [hedeflenen sonuçları] elde etmeme yardımcı oldu.
